@@ -59,7 +59,7 @@
     </main>
 
     <footer role="contentinfo">
-        <p>&copy; 2025 <a href="https://www.humanjava.com/" target="_blank" rel="noopener noreferrer">Humanjava Enterprises</a>. All rights reserved.</p>
+        <div id="dynamic-footer"></div>
     </footer>
 
     <script>
@@ -77,6 +77,22 @@
                 icon.classList.toggle('fa-moon');
                 icon.classList.toggle('fa-sun');
             });
+
+            // New footer loader
+            fetch('../metadata/footer.json')
+                .then(response => response.json())
+                .then(data => {
+                    const footer = document.getElementById('dynamic-footer');
+                    footer.innerHTML = `
+                        <p>${data.footerText}</p>
+                        <div class="footer-links">
+                            ${data.links.map(link => 
+                                `<a href="${link.url}" target="_blank">${link.text}</a>`
+                            ).join(' | ')}
+                        </div>
+                        <p><a href="https://github.com/Lx7-CA/ref-web/fork" target="_blank">Fork this repo</a> to remix</p>
+                    `;
+                });
         });
     </script>
 </body>
