@@ -30,7 +30,7 @@
     <title>Lx7.ca | Coming Soon</title>
     <link rel="stylesheet" href="https://raw.githubusercontent.com/Lx7-CA/ref-web/7581d24d4c730645924b1e1208003937b8136b22/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="manifest" href="https://raw.githubusercontent.com/Lx7-CA/ref-web/7581d24d4c730645924b1e1208003937b8136b22/metadata/manifest.json">
+    <link rel="manifest" href="/metadata/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#2d3436">
 </head>
@@ -82,7 +82,7 @@
             });
 
             // New footer loader
-            fetch('https://raw.githubusercontent.com/Lx7-CA/ref-web/7581d24d4c730645924b1e1208003937b8136b22/metadata/footer.json')
+            fetch('/metadata/footer.json')
                 .then(response => response.json())
                 .then(data => {
                     const footer = document.getElementById('dynamic-footer');
@@ -100,7 +100,7 @@
 
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('https://raw.githubusercontent.com/Lx7-CA/ref-web/7581d24d4c730645924b1e1208003937b8136b22/metadata/sw.js')
+                navigator.serviceWorker.register('/metadata/sw.js')
                     .then(reg => console.log('ServiceWorker registered'))
                     .catch(err => console.log('ServiceWorker registration failed: ', err));
             });
