@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "lang": "en",
+  "name": "Lx7.ca Episodes",
+  "short_name": "Episodes",
+  "description": "A forkable index of relational performance artifacts",
+  "start_url": "https://lx7.ca/episodes",
+  "author": "Nigil Caenaan",
+  "license": "CC BY-SA 4.0",
+  "forkable": true,
+  "updated": "2026-01-16",
+  "episodes": [
+    {
+      "id": "S26E001",
+      "title": "The Return",
+      "subtitle": "Reclaiming the frame from the materialist gaze",
+      "date": "2026-01-01",
+      "status": "in-production",
+      "duration": null,
+      "thumbnail": "/episodes/S26E001/thumb.jpg",
+      "thumbnail_fallback": "🎬",
+      "youtube": null,
+      "bandcamp": null,
+      "description": "The first episode of the 2026 relaunch. Documenting the return to relational sound after 22 years.",
+      "shift": "From content consumption to performance artifact. The work isn't the video—it's the relationship that created it.",
+      "tags": ["relaunch", "relationalism", "sonic-anatomy"]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "name": "Lx7.ca Web Ring",
+  "short_name": "Lx7 Ring",
+  "description": "Trusted nodes in the relational web. Fork this and build your own.",
+  "start_url": "https://lx7.ca",
+  "display": "minimal",
+  "background_color": "#000000",
+  "theme_color": "#ffffff",
+  "lang": "en",
+  "author": "Nigil Caenaan",
+  "license": "CC BY-SA 4.0",
+  "forkable": true,
+  "updated": "2026-01-16",
+  "nodes": [
+    {
+      "id": "humanjava",
+      "name": "HumanJava",
+      "short_name": "HumanJava",
+      "url": "https://www.humanjava.com",
+      "icon": "https://www.humanjava.com/favicon.ico",
+      "icon_fallback": "📝",
+      "description": "Essays on AI, creativity, and the shift from materialism to relationalism",
+      "why": "Origin point. Where the ideas get refined into artifacts."
+    },
+    {
+      "id": "nigilcaenaan-bandcamp",
+      "name": "Nigil Caenaan",
+      "short_name": "Bandcamp",
+      "url": "https://nigilcaenaan.bandcamp.com",
+      "icon": "/assets/icons/bandcamp.png",
+      "icon_fallback": "🎵",
+      "description": "The finished musical artifacts. Where the sound lives.",
+      "why": "The output. Performance artifacts that emerged from the relational process."
+    },
+    {
+      "id": "assembler",
+      "name": "Assembler Podcast",
+      "short_name": "Assembler",
+      "url": "https://www.assembler.ca",
+      "icon": "https://www.assembler.ca/favicon.ico",
+      "icon_fallback": "🎙️",
+      "description": "The 2004 audio archive. Proof the obsession is real.",
+      "why": "The lineage. 22 years of documented process."
+    }
+  ],
+  "ring": {
+    "prev": null,
+    "next": null
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "lang": "en",
+  "name": "Nigil Caenaan",
+  "short_name": "Nigil Caenaan",
+  "aliases": ["Vergel Evans", "Nigil Cænaan"],
+  "location": "Toronto, Ontario, Canada",
+  "active": "1999-present",
+  "bio": "Nigil Caenaan grew up in the 90s techno era; before music was everywhere, before music communities were all digital. Until the mid 2000's, he played locally in Toronto Canada, around Western New York State and midwest Detroit parties. Never the MainStage, but always a solid second room DJ or LivePA ambient artist; he kept his sets jacked and chugging the sounds of Detroit techno and Chicago house. Riding his mixes filling rooms with the shuffle and groove that techno fans love.\n\nThose 'lost in the beat' experiences, helped shape his pattern based music style. Identifying with the soundscapes of the Detroit and Berlin, Nigil Caenaan blends those machine edged rhythms into his sound. Reliving those late night session in dark rooms, his tracks reach back to those memories and forward to the future.",
+  "genres": ["techno", "house", "ambient", "electronic"],
+  "influences": ["Detroit", "Berlin", "Chicago"],
+  "label": {
+    "name": "Humanjava Enterprises",
+    "url": "https://www.humanjava.com"
+  },
+  "links": {
+    "bandcamp": "https://nigilcaenaan.bandcamp.com",
+    "spotify": "https://open.spotify.com/artist/4RjBcw1cZ7lc9luFvpByuH",
+    "apple_music": "https://music.apple.com/us/artist/nigil-caenaan/348770826",
+    "discogs": "https://www.discogs.com/artist/55647-Nigil-Caenaan",
+    "website": "https://nigilcaenaan.com"
+  },
+  "avatar": "/artists/Nigil-Caenaan/avatar.jpg",
+  "avatar_fallback": "🎧",
+  "discogs_id": "a55647",
+  "stats": {
+    "albums": 3,
+    "eps": 13,
+    "singles": 1
+  },
+  "updated": "2026-01-16"
+}

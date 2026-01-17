@@ -1,0 +1,186 @@
+{
+  "version": "1.0",
+  "lang": "en",
+  "name": "Nigil Caenaan Discography",
+  "short_name": "Discography",
+  "description": "The complete catalog of relational sound artifacts",
+  "start_url": "https://nigilcaenaan.bandcamp.com",
+  "author": "Nigil Caenaan",
+  "license": "All Rights Reserved",
+  "forkable": false,
+  "updated": "2026-01-16",
+  "releases": [
+    {
+      "id": "resonance",
+      "title": "Resonance",
+      "type": "ep",
+      "year": 2025,
+      "catalog": null,
+      "url": "https://nigilcaenaan.bandcamp.com/album/resonance",
+      "cover": "/artists/Nigil-Caenaan/covers/resonance.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "recognition",
+      "title": "Recognition",
+      "type": "ep",
+      "year": 2025,
+      "catalog": "HJ25.09",
+      "url": "https://nigilcaenaan.bandcamp.com/album/recognition",
+      "cover": "/artists/Nigil-Caenaan/covers/recognition.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "duality",
+      "title": "Duality",
+      "type": "ep",
+      "year": 2025,
+      "catalog": "HJ25.06",
+      "url": "https://nigilcaenaan.bandcamp.com/album/duality",
+      "cover": "/artists/Nigil-Caenaan/covers/duality.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "dont-miss",
+      "title": "Don't Miss",
+      "type": "single",
+      "year": 2024,
+      "catalog": "HJ24.09",
+      "url": "https://nigilcaenaan.bandcamp.com/track/dont-miss",
+      "cover": "/artists/Nigil-Caenaan/covers/dont-miss.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "kairos",
+      "title": "Kairos",
+      "type": "ep",
+      "year": 2023,
+      "catalog": "HJ23.03",
+      "url": "https://nigilcaenaan.bandcamp.com/album/kairos",
+      "cover": "/artists/Nigil-Caenaan/covers/kairos.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "year-one",
+      "title": "Year One",
+      "type": "album",
+      "year": 2021,
+      "catalog": "HJ21.09",
+      "url": "https://nigilcaenaan.bandcamp.com/album/year-one",
+      "cover": "/artists/Nigil-Caenaan/covers/year-one.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "minds-of-mirrors",
+      "title": "Minds of Mirrors",
+      "type": "ep",
+      "year": 2021,
+      "catalog": "HJ21.03",
+      "url": "https://nigilcaenaan.bandcamp.com/album/minds-of-mirrors",
+      "cover": "/artists/Nigil-Caenaan/covers/minds-of-mirrors.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "latenite-ascension",
+      "title": "Latenite Ascension",
+      "type": "ep",
+      "year": 2021,
+      "catalog": "HJ21.01",
+      "url": "https://nigilcaenaan.bandcamp.com/album/latenite-ascension",
+      "cover": "/artists/Nigil-Caenaan/covers/latenite-ascension.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "dark-light",
+      "title": "Dark • Light",
+      "type": "ep",
+      "year": 2020,
+      "catalog": "HJ20.10",
+      "url": "https://nigilcaenaan.bandcamp.com/album/dark-light",
+      "cover": "/artists/Nigil-Caenaan/covers/dark-light.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "crisis-revival",
+      "title": "Crisis • Revival",
+      "type": "ep",
+      "year": 2020,
+      "catalog": "HJ20.06",
+      "url": "https://nigilcaenaan.bandcamp.com/album/crisis-revival",
+      "cover": "/artists/Nigil-Caenaan/covers/crisis-revival.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "power-pretext",
+      "title": "Power • Pretext",
+      "type": "ep",
+      "year": 2020,
+      "catalog": "HJ20.03",
+      "url": "https://nigilcaenaan.bandcamp.com/album/power-pretext",
+      "cover": "/artists/Nigil-Caenaan/covers/power-pretext.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "vision-aversion",
+      "title": "Vision • Aversion",
+      "type": "ep",
+      "year": 2020,
+      "catalog": "HJ20.01",
+      "url": "https://nigilcaenaan.bandcamp.com/album/vision-aversion",
+      "cover": "/artists/Nigil-Caenaan/covers/vision-aversion.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "developing-space",
+      "title": "DE VEL OP ING SP ACE",
+      "type": "ep",
+      "year": 2019,
+      "catalog": "HJ19.05",
+      "url": "https://nigilcaenaan.bandcamp.com/album/developing-space",
+      "cover": "/artists/Nigil-Caenaan/covers/developing-space.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "trans-atlantic-sound-language",
+      "title": "Trans-Atlantic Sound Language",
+      "type": "album",
+      "year": 2012,
+      "catalog": "HJ19.08",
+      "url": "https://nigilcaenaan.bandcamp.com/album/trans-atlantic-sound-language",
+      "cover": "/artists/Nigil-Caenaan/covers/trans-atlantic-sound-language.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "hj-sessions-alpha",
+      "title": "HJ - Sessions.Alpha",
+      "type": "ep",
+      "year": 2009,
+      "catalog": "HJ-006",
+      "url": "https://nigilcaenaan.bandcamp.com/album/hj-sessions-alpha",
+      "cover": "/artists/Nigil-Caenaan/covers/hj-sessions-alpha.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "forget-regret",
+      "title": "Forget // Regret",
+      "type": "album",
+      "year": 2008,
+      "catalog": "HJ-005",
+      "url": null,
+      "cover": "/artists/Nigil-Caenaan/covers/forget-regret.jpg",
+      "cover_fallback": "🎵"
+    },
+    {
+      "id": "untitled-mnc",
+      "title": "Untitled",
+      "type": "ep",
+      "year": 1999,
+      "catalog": "MNC-001",
+      "format": "12\" vinyl",
+      "url": null,
+      "cover": "/artists/Nigil-Caenaan/covers/untitled-mnc.jpg",
+      "cover_fallback": "🎵",
+      "note": "Split release with <<machine>>"
+    }
+  ]
+}
