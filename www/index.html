@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Lx7.ca | Coming Soon">
+    <meta name="description" content="Something new is coming. Join our mailing list to be the first to know.">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lx7.ca/">
+    <meta property="og:title" content="Lx7.ca | Coming Soon">
+    <meta property="og:description" content="Something new is coming. Join our mailing list to be the first to know.">
+    <meta property="og:site_name" content="Lx7.ca">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://lx7.ca/">
+    <meta property="twitter:title" content="Lx7.ca | Coming Soon">
+    <meta property="twitter:description" content="Something new is coming. Join our mailing list to be the first to know.">
+
+    <!-- Theme Color for browsers -->
+    <meta name="theme-color" content="#0984e3" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2d3436" media="(prefers-color-scheme: dark)">
+    
+    <title>Lx7.ca | Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header" role="banner">
+        <a href="/" class="header-logo" aria-label="Home">Lx7.ca</a>
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <main class="container" role="main">
+        <div class="profile">
+            <h1 class="site-title">Lx7.ca</h1>
+            <p class="tagline">Something new is coming.</p>
+        </div>
+
+        <div class="cta-section">
+            <p class="cta-text">Be the first to know when we launch.</p>
+            <a href="https://www.humanjava.com/" 
+               class="link-card cta-button" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="Join our mailing list at Humanjava.com">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span>Join the Mailing List</span>
+            </a>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 <a href="https://www.humanjava.com/" target="_blank" rel="noopener noreferrer">Humanjava Enterprises</a>. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.querySelector('.theme-toggle');
+            const icon = themeToggle.querySelector('i');
+            
+            themeToggle.addEventListener('click', () => {
+                const html = document.documentElement;
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                html.setAttribute('data-theme', newTheme);
+                
+                icon.classList.toggle('fa-moon');
+                icon.classList.toggle('fa-sun');
+            });
+        });
+    </script>
+</body>
+</html>
