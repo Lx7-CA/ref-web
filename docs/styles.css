@@ -169,6 +169,18 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.1);
 }
 
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+    margin: 12px 0;
+}
+
+.footer-links a {
+    white-space: nowrap;
+}
+
 [data-theme="dark"] footer {
     border-top-color: rgba(255,255,255,0.1);
 }
@@ -197,5 +209,10 @@ footer a:active {
     
     .cta-text {
         font-size: 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
     }
 }
