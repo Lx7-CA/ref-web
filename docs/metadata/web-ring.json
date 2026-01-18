@@ -15,33 +15,91 @@
   "nodes": [
     {
       "id": "humanjava",
-      "name": "HumanJava",
-      "short_name": "HumanJava",
+      "name": "Humanjava Enterprises",
+      "short_name": "Humanjava",
       "url": "https://www.humanjava.com",
       "icon": "https://www.humanjava.com/favicon.ico",
       "icon_fallback": "📝",
       "description": "Essays on AI, creativity, and the shift from materialism to relationalism",
-      "why": "Origin point. Where the ideas get refined into artifacts."
+      "why": "Origin point. Where the ideas get refined into artifacts.",
+      "tags": ["top_5", "featured"]
     },
     {
       "id": "nigilcaenaan-bandcamp",
-      "name": "Nigil Caenaan",
+      "name": "Nigil Caenaan Bandcamp",
       "short_name": "Bandcamp",
       "url": "https://nigilcaenaan.bandcamp.com",
       "icon": "/assets/icons/bandcamp.png",
       "icon_fallback": "🎵",
       "description": "The finished musical artifacts. Where the sound lives.",
-      "why": "The output. Performance artifacts that emerged from the relational process."
+      "why": "The output. Performance artifacts that emerged from the relational process.",
+      "tags": ["top_5"]
     },
     {
-      "id": "assembler",
-      "name": "Assembler Podcast",
-      "short_name": "Assembler",
-      "url": "https://www.assembler.ca",
-      "icon": "https://www.assembler.ca/favicon.ico",
-      "icon_fallback": "🎙️",
-      "description": "The 2004 audio archive. Proof the obsession is real.",
-      "why": "The lineage. 22 years of documented process."
+      "id": "vveerrgg-online",
+      "name": "Vveerrgg Online",
+      "short_name": "Links",
+      "url": "https://vveerrgg.online",
+      "icon": "https://vveerrgg.online/favicon.ico",
+      "icon_fallback": "🔗",
+      "description": "Vveerrgg's link site. All the places to find the work.",
+      "why": "Central hub. The directory for everything Vveerrgg.",
+      "tags": ["top_5"]
+    },
+    {
+      "id": "simonwillison",
+      "name": "Simon Willison's Weblog",
+      "short_name": "Simon Willison",
+      "url": "https://simonwillison.blog",
+      "icon": "https://simonwillison.blog/favicon.ico",
+      "icon_fallback": "📝",
+      "description": "Thoughtful writing on AI, LLMs, and open web principles. Building tools like Datasette and LLM CLI.",
+      "why": "Aligned voice. Data as artifact, tools for thought, open web advocacy.",
+      "tags": ["writing", "ai", "tools"]
+    },
+    {
+      "id": "maggieappleton",
+      "name": "Maggie Appleton",
+      "short_name": "Maggie Appleton",
+      "url": "https://maggieappleton.com",
+      "icon": "https://maggieappleton.com/favicon.ico",
+      "icon_fallback": "🌱",
+      "description": "Visual essays on digital gardening, tools for thought, and the relational web.",
+      "why": "Process over product. Digital gardens vs performance blogs. Relational thinking.",
+      "tags": ["writing", "design", "digital_garden"]
+    },
+    {
+      "id": "arena",
+      "name": "Are.na",
+      "short_name": "Are.na",
+      "url": "https://are.na",
+      "icon": "https://are.na/favicon.ico",
+      "icon_fallback": "🔲",
+      "description": "Platform for collecting and connecting ideas. Anti-algorithm, pro-curation.",
+      "why": "Sovereignty over convenience. Built for relational thinking and curation.",
+      "tags": ["platform", "curation", "relational"]
+    },
+    {
+      "id": "hundredrabbits",
+      "name": "Hundred Rabbits",
+      "short_name": "100R",
+      "url": "https://100r.co",
+      "icon": "https://100r.co/favicon.ico",
+      "icon_fallback": "🐇",
+      "description": "Nomadic artists/developers building resilient, offline-first tools. Permacomputing philosophy.",
+      "why": "Anti-fragility. Sovereignty. Building for resilience and longevity.",
+      "tags": ["art", "tools", "resilience"]
+    },
+    {
+      "id": "kickscondor",
+      "name": "Kicks Condor",
+      "short_name": "Kicks Condor",
+      "url": "https://www.kickscondor.com",
+      "icon": "https://www.kickscondor.com/favicon.ico",
+      "icon_fallback": "🌐",
+      "description": "Indie web advocate. Builds personal web tools, champions the small web.",
+      "why": "Web rings. Relational web. The indie web spirit alive and well.",
+      "tags": ["indie_web", "tools", "writing"]
     }
   ],
   "ring": {
