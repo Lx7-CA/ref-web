@@ -81,6 +81,8 @@ By offering real, unedited, relational content in a space built for consumption,
 
 **`/collaborations/`** — Work from people who've forked the data and built their own interpretations. Because relationalism happens in the remix.
 
+→ **For technical details on the data architecture**: See [content-setup.md](content-setup.md)
+
 ---
 
 ## The Lineage
@@ -119,7 +121,7 @@ By offering real, unedited, relational content in a space built for consumption,
 
 **Submit corrections**: See something that doesn't feel right? Let me know.
 
-**Fork and remix**: Take the data and build something new. That's the whole point. Part artifact, part process, all experience. In 2004, it was about showing how to plug in and live-record with gear. In 2026, it's showing how we arrive into the age of Relationalism and create works of art together.
+**Fork and remix**: Take the data and build something new. That's the whole point. Part artifact, part process, all experience. In 2004, it was about showing how to plug in and live-record with gear. In 2026, it's showing how we arrive into the age of Relationalism and create works of art together. See [content-setup.md](content-setup.md) for step-by-step instructions.
 
 **Collaborate directly**: Hit me up on X. If you want to be part of the work, we can figure it out together.
 

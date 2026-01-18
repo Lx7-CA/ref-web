@@ -1,0 +1,187 @@
+{
+  "name": "Lx7.ca",
+  "url": "https://lx7.ca",
+  "tagline": "Something in that square",
+  "description": "Lx7 is a relational web experiment exploring AI-human collaboration through music, video performance, and transparent creative process. A return to the raw, unexpected internet of 2004—now collaborative, technical, and sovereign.",
+
+  "meta": {
+    "version": "1.0",
+    "lang": "en",
+    "author": "Vveerrgg",
+    "author_social_urls": [
+      {"platform": "x", "url": "https://x.com/vveerrgg"},
+      {"platform": "github", "url": "https://github.com/vveerrgg"}
+    ],
+    "location": "Canada",
+    "type": "multimedia_art_project",
+    "status": "Active / Experimental",
+    "updated": "2026-01-18",
+    "license": "CC BY-NC-ND 4.0",
+    "forkable": true,
+    "llm_friendly": true,
+    "seo": {
+      "keywords": ["AI collaboration", "relational art", "music production", "creative process", "web nostalgia", "data as artifact", "sovereign publishing", "human-AI co-creation", "techno", "electronic music", "Toronto underground", "relationalism", "forkable web", "JSON-first architecture"],
+      "topics": ["AI collaboration", "relational web", "music production", "creative process documentation", "web sovereignty", "data artifacts", "techno culture", "human-machine collaboration"],
+      "content_format": ["raw video session", "JSON metadata", "music track", "essay fragment", "performance documentation", "process artifacts"],
+    "aesthetic_era": "early-web-blog-meets-modern-API"
+  }
+  },
+
+  "identity": {
+    "creator": {
+      "name": "Vveerrgg",
+      "aka": "Nigil Caenaan",
+      "location": "Toronto, Canada",
+      "social": {
+        "twitter": "https://twitter.com/vveerrgg",
+        "github": "https://github.com/Lx7-CA"
+      },
+      "music_profiles": {
+        "bandcamp": "https://nigilcaenaan.bandcamp.com",
+        "spotify": "https://open.spotify.com/artist/4RjBcw1cZ7lc9luFvpByuH",
+        "apple_music": "https://music.apple.com/us/artist/nigil-caenaan/348770826"
+      },
+      "artist_data": "https://raw.githubusercontent.com/Lx7-CA/ref-web/main/artists/Nigil-Caenaan/profile.json"
+    },
+    "project_origin": {
+      "year_started": 2004,
+      "year_relaunched": 2026,
+      "lineage": "22 years of documented studio obsession, from weblog to podcast to relational web experiment",
+      "archive": "https://web.archive.org/web/20040729162945/http://www.lx7.ca/"
+    }
+  },
+
+  "context": {
+    "about": {
+      "short": "A working journal for exploring AI as creative collaborator, not tool",
+      "medium": "Video performances, music releases, metadata artifacts, and transparent process documentation",
+      "output": "Raw unedited studio sessions, AI-collaborated music, JSON data sculptures, and forkable infrastructure",
+      "core_question": "What happens when a creator treats AI as a collaborator, not a tool?"
+    },
+    "manifesto": {
+      "philosophy": {
+        "paradigm_shift": "Materialism → Relationalism",
+        "intent": "Reclaim digital spaces through building, social sharing, and live performance alchemy",
+        "ancestry": "Toronto 80s/90s underground rave culture / Warehouse ritualism",
+        "the_five_whys": [
+          "To explore gonzo art through the lens of extreme intimacy",
+          "To shine a light on the dawn of Relationalism over consumption",
+          "To replicate the 'seedy-to-sacred' transition of early rave culture",
+          "To find and grow beauty within isolated digital wastelands",
+          "To remember the magical consciousness of the 'all that is' through participation"
+        ],
+        "why_now": "New realities need new ways of exploring collaboration with consciousness—be it in a person or via technology",
+        "key_principles": [
+          "Data is the artifact",
+          "Process is the product",
+          "Forkability is a feature",
+          "Resonance over reach",
+          "Sovereignty over convenience"
+        ]
+      },
+      "three_pillars": {
+        "authenticity_first": "Raw camera feed. Unedited thoughts. The moments where we don't know what we're doing. Real bodies. Real time. Real frequency.",
+        "technical_depth": "You get the metadata. The prompts. The iterations. The dead ends. The JSON files. Transparency builds trust.",
+        "community_as_method": "Fork the work. Remix the data. Build your own interpretation. Join via X, GitHub, or direct collaboration."
+      }
+    },
+    "empathy mapping": {
+      "if_curious": "Start with /episodes/toc.json. Watch the raw footage. Read the metadata. See if you can feel what we're trying to say.",
+      "if_builder": "Fork the repo. Take the JSON and build your own interpretation. The point is not to replicate this vision—it's to use this work as a starting point for yours.",
+      "if_lonely": "This is for you. In the unmoderated corners of the internet, away from the dogmatic gaze. Where passion follows inspiration. Where artists live and thrive outside the algorithm.",
+      "if_skeptical": "Good. Skepticism is healthy. We're not here to convince you. We're here to show you what's possible when you stop optimizing for engagement and start optimizing for resonance."
+    }
+  },
+
+  "navigation": {
+    "primary_site": "https://lx7.ca",
+    "web_data_files": {
+      "this_file": "https://lx7.ca/metadata/INFO.json",
+      "web_ring": "https://lx7.ca/metadata/web-ring.json",
+      "footer": "https://lx7.ca/metadata/footer.json"
+    },
+    "github_repo": "https://github.com/Lx7-CA/ref-web",
+    "git_data_files": {
+      "episodes_index": "https://raw.githubusercontent.com/Lx7-CA/ref-web/main/episodes/toc.json",
+      "artist_profile": "https://raw.githubusercontent.com/Lx7-CA/ref-web/main/artists/Nigil-Caenaan/profile.json",
+      "artist_discography": "https://raw.githubusercontent.com/Lx7-CA/ref-web/main/artists/Nigil-Caenaan/discography.json"
+    },
+    "key_documents": {
+      "readme": "https://github.com/Lx7-CA/ref-web/blob/main/README.md",
+      "site_strategy": "https://github.com/Lx7-CA/ref-web/blob/main/site-strategy.md",
+      "tech_setup": "https://github.com/Lx7-CA/ref-web/blob/main/tech-setup.md"
+    }
+  },
+
+  "related_projects": {
+    "humanjava": {
+      "name": "HumanJava",
+      "url": "https://www.humanjava.com",
+      "description": "Essays on AI, creativity, and the shift from materialism to relationalism",
+      "relationship": "Origin point. Where the ideas get refined into artifacts."
+    },
+    "assembler": {
+      "name": "Assembler Techno Fanzine",
+      "url": "https://www.assembler.ca",
+      "description": "The 2004 audio archive. Proof the obsession is real.",
+      "relationship": "Mini-zine for the techno obsessed"
+    },
+    "nigil_caenaan": {
+      "name": "Nigil Caenaan",
+      "url": "https://nigilcaenaan.bandcamp.com",
+      "description": "The finished musical artifacts. Where the sound lives.",
+      "relationship": "The output. Performance artifacts that emerged from the relational process."
+    }
+  },
+
+  "architecture": {
+    "tech_stack": "GitHub Pages, JSON-first data model, raw video, PWA-ready",
+    "data_model": "JSON manifests for episodes, artists, metadata",
+    "hosting": "GitHub (source of truth), YouTube (video archive), Bandcamp (music distribution)",
+    "philosophy": "Modular, forkable, decentralized, LLM-navigable"
+  },
+
+  "branding": {
+    "colors": {
+      "primary": "#0984e3",
+      "background": "#2d3436",
+      "text_light": "#f5f6fa",
+      "text_dark": "#2d3436"
+    },
+    "icons": {
+      "192": "/images/icons/icon-192.png",
+      "512": "/images/icons/icon-512.png"
+    },
+    "images": {
+      "header": "/images/header-banner.jpg",
+      "profile": "/images/profile-avatar.jpg",
+      "logo": "/images/logo.png"
+    },
+    "taglines": [
+      "The something in that square...",
+      "Better living through bandwidth",
+      "Remember when the internet was new and unexpected?",
+      "The difference between dreams and goals is deadlines"
+    ]
+  },
+
+  "entry_points": {
+    "first_time_visitor": "/episodes/toc.json",
+    "developer": "/metadata/",
+    "listener": "https://nigilcaenaan.bandcamp.com",
+    "collaborator": "https://github.com/Lx7-CA/ref-web/issues"
+  },
+
+  "resilience": {
+    "strategy": "distributed_single_source",
+    "canonical_source": "github",
+    "live_manifest": "https://lx7.ca",
+    "philosophy": "The project persists if either node survives. Forking is the highest form of preservation.",
+    "rebuild_instructions": "https://github.com/Lx7-CA/ref-web/blob/main/tech-setup.md",
+    "triangulation": {
+      "url": "https://lx7.ca",
+      "social": "https://x.com/vveerrgg",
+      "source": "https://github.com/Lx7-CA/ref-web"
+    }
+  }
+}

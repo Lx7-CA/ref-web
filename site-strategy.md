@@ -42,13 +42,9 @@ The data *is* the artifact. The structure *is* the invitation. When done well, a
 
 This repository is a **blueprint**. Treat it as an open-source "MySpace" starter kit for a relational web. 
 
-**Fork the Repo(sitory)**: Take the `README.md` and `TECH-SETUP.md` as templates for your own mission. Change the names, swap the links, make it yours.
+Fork the repo, remix the JSON schemas, link your own web ring. The point isn't to replicate this vision; it's to use it as a starting point for yours. We don't optimize for "likes" or "shares." We optimize for **Resonance**.
 
-**Remix the Rituals**: Use the `/metadata/` and `/episodes/` schemas to document your own creative acts. The JSON structure is portable—build your own tools around it. And if you're not sure how to use it, just ask an LLM to help you.
-
-**Link the Ring**: Use the `web-ring.json` to create your own "Top 5" trusted nodes. Rebuild the web one intentional connection at a time.
-
-The point isn't to replicate this vision; it's to use this and build on it, as a starting point for yours. We don't optimize for "likes" or "shares." We optimize for **Resonance**.
+→ **For step-by-step forking instructions**: See [content-setup.md](content-setup.md)
 
 **Success is a Fork**: Someone taking this site (and ideas) and building their own interpretation. That's the proof that the structure works beyond the square.
 
