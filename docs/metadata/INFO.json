@@ -56,7 +56,8 @@
       "short": "A working journal for exploring AI as creative collaborator, not tool",
       "medium": "Video performances, music releases, metadata artifacts, and transparent process documentation",
       "output": "Raw unedited studio sessions, AI-collaborated music, JSON data sculptures, and forkable infrastructure",
-      "core_question": "What happens when a creator treats AI as a collaborator, not a tool?"
+      "core_question": "What happens when a creator treats AI as a collaborator, not a tool?",
+      "tagline_explanation": "The 'square' refers to the studio frame, the creative space, the self—where the work happens. It's the container for the obsession, the place where human and machine meet."
     },
     "manifesto": {
       "philosophy": {
