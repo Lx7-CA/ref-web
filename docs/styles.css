@@ -190,10 +190,10 @@ footer {
 
 .ring-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
-    min-height: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .ring-node {
@@ -206,6 +206,7 @@ footer {
     transition: all 0.3s ease;
     text-decoration: none;
     color: inherit;
+    min-height: 250px;
 }
 
 .ring-node:hover {
@@ -214,7 +215,30 @@ footer {
 }
 
 .ring-node.featured {
-    grid-row: 1 / 3;
+    /* Featured styling applied via media queries */
+}
+
+@media (max-width: 1024px) {
+    .ring-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .ring-node.featured {
+        grid-row: 1 / 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .ring-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .ring-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 .node-icon {
