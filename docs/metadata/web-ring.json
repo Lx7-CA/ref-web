@@ -65,7 +65,7 @@
       "name": "Simon Willison's Weblog",
       "short_name": "Simon Willison",
       "url": "https://simonwillison.net",
-      "icon": "https://simonwillison.blog/favicon.ico",
+      "icon": "https://simonwillison.net/favicon.ico",
       "icon_fallback": "📝",
       "description": "Thoughtful writing on AI, LLMs, and open web principles. Building tools like Datasette and LLM CLI.",
       "why": "Aligned voice. Data as artifact, tools for thought, open web advocacy.",
