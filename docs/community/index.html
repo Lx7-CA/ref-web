@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community | Lx7.ca</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/icons/icon-192.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-jBMicE0JgNYr8TdXhtBJ1.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+</head>
+<body>
+    <header class="header" role="banner">
+        <ol>
+            <li><a href="/" class="header-logo" aria-label="Home">Lx7.ca</a></li>
+            <li><a href="/episodes" aria-label="Episodes">Episodes / Podcast</a></li>
+            <li><a href="/community" class="active" aria-label="Community">Community</a></li>
+        </ol>
+        
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <div>
+        <main class="container" role="main">
+            <h1>Community</h1>
+            <p>TBD - Content coming soon</p>
+        </main>
+    </div>
+
+    <footer role="contentinfo">
+        <div id="dynamic-footer"></div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.querySelector('.theme-toggle');
+            const icon = themeToggle.querySelector('i');
+            
+            themeToggle.addEventListener('click', () => {
+                const html = document.documentElement;
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                html.setAttribute('data-theme', newTheme);
+                
+                icon.classList.toggle('fa-moon');
+                icon.classList.toggle('fa-sun');
+            });
+
+            // Footer loader
+            fetch('/metadata/footer.json')
+                .then(response => response.json())
+                .then(data => {
+                    const footer = document.getElementById('dynamic-footer');
+                    footer.innerHTML = `
+                        <p>${data.footerText}</p>
+                        <div class="footer-links">
+                            ${data.links.map(link => {
+                                if (link.text_extra) {
+                                    return `<span><a href="${link.url}" target="_blank">${link.text}</a> ${link.text_extra}</span>`;
+                                }
+                                return `<a href="${link.url}" target="_blank">${link.text}</a>`;
+                            }).join('')}
+                        </div>
+                    `;
+                });
+        });
+    </script>
+</body>
+</html>

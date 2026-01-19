@@ -1,0 +1,108 @@
+{
+  "show": {
+    "name": "Lx7.ca",
+    "tagline": "Something In That Square",
+    "description": "A podcast about techno, music production, and the Detroit electronic music scene from 2006-2008."
+  },
+  "episodes": [
+    {
+      "id": "ep001",
+      "title": "Lx7 podvert",
+      "youtube_id": "uGrXNeu3fEc",
+      "description": "Look it's another wonderful podvert.... thought it would be jokes to share it...",
+      "topics": ["podvert", "intro"],
+      "published": "Mar 10, 2006",
+      "duration": "0:42"
+    },
+    {
+      "id": "ep010",
+      "title": "Lx7#010 - Is classical music really techno.",
+      "youtube_id": "T9igA12r5Gk",
+      "description": "What is techno? Ha,... such an easy question to answer... electronic music right? maybe not. Let me ask the question and give you something to think about.",
+      "topics": ["techno", "music theory", "philosophy"],
+      "published": "Jul 7, 2006",
+      "duration": "4:17"
+    },
+    {
+      "id": "ep025",
+      "title": "Lx7#025 - Live PA'ing The MPC (How I did it)",
+      "youtube_id": "WH8Z1qfQ-QU",
+      "description": "In this video episode I do a follow-up to the previous episode LivePA. I share the process on how I put it together, and speak to the idea of standardizing the process.",
+      "topics": ["MPC", "live performance", "production"],
+      "published": "Jan 3, 2007",
+      "duration": "7:43"
+    },
+    {
+      "id": "ep033",
+      "title": "Lx7#033 - Running The Beats In Record Mode",
+      "youtube_id": "OIpO61hwYhg",
+      "description": "Some people are fans of programming their music to the nth degree, but sometimes working that way can bog down the creative process. I like to get in there and work.",
+      "topics": ["production", "workflow", "creativity"],
+      "published": "May 5, 2007",
+      "duration": "10:10"
+    },
+    {
+      "id": "ep035",
+      "title": "Lx7#035 - DEMF, Aaron-Carl And Music Inspiration",
+      "youtube_id": "9abQa3QlsWo",
+      "description": "Wondered what DEMF was like... for me it was a chance to hang out with friends and shoot some video. Having spent most of the event at the various kiosks I talked to Aaron-Carl.",
+      "topics": ["DEMF", "Aaron-Carl", "Detroit", "inspiration"],
+      "published": "Jun 30, 2007",
+      "duration": "5:40"
+    },
+    {
+      "id": "ep036",
+      "title": "Lx7#036 - DEMF, DJ Di'jital Oldschool Tracks and Samplers",
+      "youtube_id": "qFoDAWXVW6U",
+      "description": "When I first started visiting detroit I had a chance meeting with DJ Di'jital outside of Record Time. He had no idea who I was,... but for years after the chance meeting we kept in touch.",
+      "topics": ["DEMF", "DJ Di'jital", "Detroit", "samplers"],
+      "published": "Jun 30, 2007",
+      "duration": "4:56"
+    },
+    {
+      "id": "ep037",
+      "title": "Lx7#037 - DEMF, Camera Chaos With Anthony Shakir And Claude",
+      "youtube_id": "qQ_5r_-XeGg",
+      "description": "My attempts to spend some time with Anthony Shakir on camera seemed fraught with problems... every time I planned on interviewing him, he would disappear.",
+      "topics": ["DEMF", "Anthony Shakir", "Detroit"],
+      "published": "Jul 26, 2007",
+      "duration": "9:23"
+    },
+    {
+      "id": "ep038",
+      "title": "Lx7#038 - A NIN remix with the Butcher of Detroit",
+      "youtube_id": "iTLJWoarxT8",
+      "description": "I've known Sean (The Butcher of Detroit) for ages from his visits up to Toronto to buy records and hang out for Carabana. So while I was in Detroit for DEMF, I stopped by his studio.",
+      "topics": ["DEMF", "Butcher of Detroit", "NIN", "remix", "Toronto"],
+      "published": "Jul 26, 2007",
+      "duration": "8:40"
+    },
+    {
+      "id": "ep039",
+      "title": "Lx7#039 - Theo Parrish do it cause you're _____...",
+      "youtube_id": "xmuTT4bIA6I",
+      "description": "I've been a fan of Theo Parrish since I first heard First Floor. I'd been traveling to Detroit buying pretty much anything that I found at Record Time that said Sound Signature.",
+      "topics": ["DEMF", "Theo Parrish", "Detroit", "Sound Signature"],
+      "published": "Aug 2, 2007",
+      "duration": "6:04"
+    },
+    {
+      "id": "ep040",
+      "title": "Lx7#040 - A Short Visual History of EDM Hardware",
+      "youtube_id": "xN2XWU4FQ7g",
+      "description": "At Beats Breaks and Culture, Play De Record sponsored a gallery installation that tracked some of the hardware used to make electronic music.",
+      "topics": ["hardware", "EDM", "history", "Toronto", "Play De Record"],
+      "published": "Aug 30, 2007",
+      "duration": "7:19"
+    },
+    {
+      "id": "ep041",
+      "title": "Lx7#041 - The End of my Studio 1",
+      "youtube_id": "XAIcG8U9CJM",
+      "description": "This episode is a goodbye to my current studio, but the Lx7 podcast is not over. It's been a summer of planning, for season 3 of the show. After 2 years of weekly episodes.",
+      "topics": ["studio", "goodbye", "season finale"],
+      "published": "Oct 11, 2007",
+      "duration": "4:11"
+    }
+  ]
+}
