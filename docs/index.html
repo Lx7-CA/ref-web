@@ -35,6 +35,13 @@
     <link rel="manifest" href="/metadata/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#2d3436">
+    
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-jBMicE0JgNYr8TdXhtBJ1.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
 </head>
 <body>
     <header class="header" role="banner">
@@ -43,7 +50,7 @@
             <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
     </header>
-
+<div>
     <main class="container" role="main">
         <div class="profile">
             <h1 class="site-title">Lx7.ca</h1>
@@ -63,6 +70,13 @@
         </div>
     </main>
 
+    <section class="web-ring-section">
+        <h2>Web Ring</h2>
+        <div class="ring-container" id="ring-container">
+            <!-- Nodes will be loaded here -->
+        </div>
+    </section>
+</div>
     <footer role="contentinfo">
         <div id="dynamic-footer"></div>
     </footer>
@@ -83,7 +97,7 @@
                 icon.classList.toggle('fa-sun');
             });
 
-            // New footer loader
+            // Footer loader
             fetch('/metadata/footer.json')
                 .then(response => response.json())
                 .then(data => {
@@ -91,13 +105,74 @@
                     footer.innerHTML = `
                         <p>${data.footerText}</p>
                         <div class="footer-links">
-                            ${data.links.map(link => 
-                                `<a href="${link.url}" target="_blank">${link.text}</a>`
-                            ).join('')}
+                            ${data.links.map(link => {
+                                if (link.text_extra) {
+                                    return `<span><a href="${link.url}" target="_blank">${link.text}</a> ${link.text_extra}</span>`;
+                                }
+                                return `<a href="${link.url}" target="_blank">${link.text}</a>`;
+                            }).join('')}
                         </div>
-                        <p><a href="https://github.com/Lx7-CA/ref-web/fork" target="_blank">Fork this repo</a> to remix</p>
                     `;
                 });
+
+            // Web ring loader
+            fetch('/metadata/web-ring.json')
+                .then(response => response.json())
+                .then(data => {
+                    let nodes = data.nodes;
+
+                    // Check if we should show the default_friend (Lx7.ca)
+                    const currentDomain = window.location.hostname;
+                    const isLx7Domain = currentDomain.includes('lx7.ca');
+                    
+                    // Add default_friend to nodes if not on lx7.ca
+                    if (data.default_friend && !isLx7Domain) {
+                        nodes = [data.default_friend, ...nodes];
+                    }
+
+                    // Filter nodes by tags
+                    const featured = nodes.filter(n => n.tags.includes('featured'));
+                    const top5 = nodes.filter(n => n.tags.includes('top_5') && !n.tags.includes('featured'));
+                    const others = nodes.filter(n => 
+                        !n.tags.includes('featured') && 
+                        !n.tags.includes('top_5')
+                    );
+
+                    // Shuffle others for random display
+                    const shuffled = others.sort(() => Math.random() - 0.5);
+
+                    // Build display array: featured first, then top_5, then fill remaining from others
+                    const display = [...featured, ...top5, ...shuffled].slice(0, 5);
+
+                    // Render nodes
+                    const container = document.getElementById('ring-container');
+                    container.innerHTML = display.map((node, index) => {
+                        const isFeatured = index === 0 && node.tags.includes('featured');
+                        
+                        // Generate DiceBear avatar URL as fallback
+                        const avatarUrl = `https://api.dicebear.com/7.x/shapes/svg?seed=${encodeURIComponent(node.name)}`;
+                        
+                        // Try to load icon, fall back to generated avatar, then emoji
+                        const iconHtml = node.icon 
+                            ? `<img src="${node.icon}" alt="${node.name}" onerror="this.onerror=null; this.src='${avatarUrl}'; this.style.display='block';" />`
+                            : `<img src="${avatarUrl}" alt="${node.name}" onerror="this.style.display='none'; this.parentElement.innerHTML='${node.icon_fallback}';" />`;
+                        
+                        return `
+                            <a href="${node.url}" 
+                               class="ring-node ${isFeatured ? 'featured' : ''}" 
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div>
+                                    <div class="node-icon">${iconHtml}</div>
+                                    <div class="node-name">${node.short_name || node.name}</div>
+                                    <div class="node-description">${node.description}</div>
+                                </div>
+                                <div class="node-why">${node.why}</div>
+                            </a>
+                        `;
+                    }).join('');
+                })
+                .catch(error => console.error('Failed to load web ring:', error));
         });
 
         if ('serviceWorker' in navigator) {

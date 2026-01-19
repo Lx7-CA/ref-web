@@ -121,12 +121,6 @@
       "description": "Essays on AI, creativity, and the shift from materialism to relationalism",
       "relationship": "Origin point. Where the ideas get refined into artifacts."
     },
-    "assembler": {
-      "name": "Assembler Techno Fanzine",
-      "url": "https://www.assembler.ca",
-      "description": "The 2004 audio archive. Proof the obsession is real.",
-      "relationship": "Mini-zine for the techno obsessed"
-    },
     "nigil_caenaan": {
       "name": "Nigil Caenaan",
       "url": "https://nigilcaenaan.bandcamp.com",
@@ -174,11 +168,10 @@
   },
 
   "resilience": {
+    "philosophy": "The project persists if either node survives. Forking is the highest form of preservation.",
     "strategy": "distributed_single_source",
     "canonical_source": "github",
     "live_manifest": "https://lx7.ca",
-    "philosophy": "The project persists if either node survives. Forking is the highest form of preservation.",
-    "rebuild_instructions": "https://github.com/Lx7-CA/ref-web/blob/main/tech-setup.md",
     "triangulation": {
       "url": "https://lx7.ca",
       "social": "https://x.com/vveerrgg",

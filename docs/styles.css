@@ -35,12 +35,17 @@ body {
     margin: 0;
 }
 
+body > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     max-width: 680px;
     width: 100%;
     margin: 80px auto 0;
     padding: 40px 20px;
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,9 +169,112 @@ footer {
     color: #636e72;
     font-size: 14px;
     background-color: var(--card-background);
-    margin-top: auto;
     width: 100%;
     border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: 0;
+}
+
+.web-ring-section {
+    max-width: 1200px;
+    margin: 4rem auto 4rem;
+    padding: 2rem 1rem;
+}
+
+.web-ring-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.ring-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    min-height: 400px;
+}
+
+.ring-node {
+    background: var(--card-background);
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.ring-node:hover {
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.ring-node.featured {
+    grid-row: 1 / 3;
+}
+
+.node-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.node-icon img {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+}
+
+.featured .node-icon {
+    font-size: 3rem;
+}
+
+.featured .node-icon img {
+    width: 72px;
+    height: 72px;
+}
+
+.node-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.featured .node-name {
+    font-size: 1.5rem;
+}
+
+.node-description {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.featured .node-description {
+    -webkit-line-clamp: 4;
+}
+
+.node-why {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.5;
+    font-style: italic;
+    margin-top: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 
 .footer-links {
@@ -178,13 +286,15 @@ footer {
     margin: 12px 0;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links span {
     white-space: nowrap;
     padding: 0 12px;
     border-right: 1px solid #636e72;
 }
 
-.footer-links a:last-child {
+.footer-links a:last-child,
+.footer-links span:last-child {
     border-right: none;
 }
 

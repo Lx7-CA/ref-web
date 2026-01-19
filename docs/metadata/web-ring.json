@@ -12,6 +12,20 @@
   "license": "CC BY-SA 4.0",
   "forkable": true,
   "updated": "2026-01-16",
+
+  "default_friend": {
+    "id": "lx7-ca",
+    "name": "Lx7.ca",
+    "short_name": "Lx7.ca",
+    "url": "https://lx7.ca",
+    "icon": "https://lx7.ca/favicon.ico",
+    "icon_fallback": "🎵",
+    "description": "A music making web-show, hosted by Vveerrgg & AI collaborators. Builder and beat maker.",
+    "why": "Frined of friends in the relational web.",
+    "tags": ["default_friend", "top_5"],
+    "show_on_domains": ["!lx7.ca"]
+  },
+
   "nodes": [
     {
       "id": "humanjava",
@@ -27,18 +41,18 @@
     {
       "id": "nigilcaenaan-bandcamp",
       "name": "Nigil Caenaan Bandcamp",
-      "short_name": "Bandcamp",
+      "short_name": "N.C.B.C",
       "url": "https://nigilcaenaan.bandcamp.com",
       "icon": "/assets/icons/bandcamp.png",
       "icon_fallback": "🎵",
-      "description": "The finished musical artifacts. Where the sound lives.",
-      "why": "The output. Performance artifacts that emerged from the relational process.",
+      "description": "Nigil Caenaans' Bandcamp & musical artifacts. Shop & listen / Buy & Support",
+      "why": "Support creatives & buy the art.",
       "tags": ["top_5"]
     },
     {
       "id": "vveerrgg-online",
       "name": "Vveerrgg Online",
-      "short_name": "Links",
+      "short_name": "Vveerrgg.Online",
       "url": "https://vveerrgg.online",
       "icon": "https://vveerrgg.online/favicon.ico",
       "icon_fallback": "🔗",
@@ -50,7 +64,7 @@
       "id": "simonwillison",
       "name": "Simon Willison's Weblog",
       "short_name": "Simon Willison",
-      "url": "https://simonwillison.blog",
+      "url": "https://simonwillison.net",
       "icon": "https://simonwillison.blog/favicon.ico",
       "icon_fallback": "📝",
       "description": "Thoughtful writing on AI, LLMs, and open web principles. Building tools like Datasette and LLM CLI.",
@@ -67,17 +81,6 @@
       "description": "Visual essays on digital gardening, tools for thought, and the relational web.",
       "why": "Process over product. Digital gardens vs performance blogs. Relational thinking.",
       "tags": ["writing", "design", "digital_garden"]
-    },
-    {
-      "id": "arena",
-      "name": "Are.na",
-      "short_name": "Are.na",
-      "url": "https://are.na",
-      "icon": "https://are.na/favicon.ico",
-      "icon_fallback": "🔲",
-      "description": "Platform for collecting and connecting ideas. Anti-algorithm, pro-curation.",
-      "why": "Sovereignty over convenience. Built for relational thinking and curation.",
-      "tags": ["platform", "curation", "relational"]
     },
     {
       "id": "hundredrabbits",
@@ -100,6 +103,17 @@
       "description": "Indie web advocate. Builds personal web tools, champions the small web.",
       "why": "Web rings. Relational web. The indie web spirit alive and well.",
       "tags": ["indie_web", "tools", "writing"]
+    },
+    {
+      "id": "sonicpi",
+      "name": "Sonic Pi",
+      "short_name": "Sonic Pi",
+      "url": "https://sonic-pi.net",
+      "icon": "https://sonic-pi.net/favicon.ico",
+      "icon_fallback": "🎹",
+      "description": "Live coding music with Ruby. Code-based music creation for everyone.",
+      "why": "Music programming. Live performance through code. Creative coding meets sound design.",
+      "tags": ["music", "tools", "creative_coding"]
     }
   ],
   "ring": {
