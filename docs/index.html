@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#0984e3" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#2d3436" media="(prefers-color-scheme: dark)">
     
-    <title>Lx7.ca | Coming Soon</title>
+    <title>Lx7.ca | Music with Tech & Culture with AI</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" type="image/png" sizes="192x192" href="./images/icons/icon-192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="./images/icons/icon-512.png">
@@ -56,33 +56,62 @@
             <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
     </header>
-<div>
-    <main class="container" role="main">
-        <div class="profile">
-            <h1 class="site-title">Lx7.ca</h1>
-            <p class="tagline">Something new is coming.</p>
-        </div>
 
-        <div class="cta-section">
-            <p class="cta-text">Be the first to know when we launch.</p>
-            <a href="https://www.humanjava.com/" 
-               class="link-card cta-button" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               aria-label="Join our mailing list at Humanjava.com">
-                <i class="fas fa-envelope" aria-hidden="true"></i>
-                <span>Join the Mailing List</span>
-            </a>
-        </div>
-    </main>
 
-    <section class="web-ring-section">
-        <h2>Web Ring</h2>
-        <div class="ring-container" id="ring-container">
-            <!-- Nodes will be loaded here -->
-        </div>
-    </section>
-</div>
+    <div>
+
+        <main class="container" role="main">
+            <div class="home-grid">
+                <section class="home-card intro-card">
+                    <h1 class="site-title">Lx7.ca</h1>
+                    <p class="tagline">The something new in that square. The square being me, us and this next age of crativity. </p>
+                    <p>In 2006 it was all showing the process of making beats in the boxes, now in 2026 its following that energy into every corner of creativity. </p>
+                </section>
+
+                <section class="home-card video-card">
+                    <p class="card-label">Latest video</p>
+                    <div class="episode-thumbnail">
+                        <iframe
+                            id="latest-episode-player"
+                            width="100%"
+                            height="200"
+                            src=""
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </section>
+
+                <section class="home-card cta-card">
+                    <p class="card-label"><b>Are you an email junkie?</b></p>
+                    
+                    <p class="cta-text">A lot of the topics and ideas come from the other site in this web of ideas; <a href="https://www.humanjava.com/" target="_blank" rel="noopener noreferrer">Humanjava.com</a>. If you're looking to stay informed on AI tech, creative collaboration, and all things human / AI experience based. Hit the button and Be the first to know.</p>
+                    
+                    <a href="https://www.humanjava.com/" class="link-card cta-button" target="_blank" rel="noopener noreferrer" aria-label="Join our mailing list at Humanjava.com">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>Join the Mailing List</span>
+                    </a>
+                </section>
+
+                <section class="home-card notes-card">
+                    <p class="card-label"><b>Whats this about...?</b></p>
+                    <p class="notes-text">In the early 2000s, I (Vergel) was a fan of Techno, but also working as a web developer building for the web. And from that intersection of nerdy tech and pattern based live performance techno, I made this project.</p>
+                    <p class="notes-text">Back at it again in 2026, here we are sharing our collective time, thoughts, and ideas about technology, creativity, and the future. I hope you enjoy the vibes. And if you want to keep the conversation going ... <a href="https://www.youtube.com/@vveerrgg" id="latest-video-link" target="_blank" rel="noopener noreferrer">Jump on Youtube</a> and join in on the comments.<br>
+                    Or find me on <a href="https://twitter.com/vveerrgg" target="_blank" rel="noopener noreferrer">Twitter/X</a> @<u>vveerrgg</u> and hit me up.</p>
+                </section>
+            </div>
+        </main>
+
+        <section class="web-ring-section">
+            <h2>Web Ring</h2>
+            <div class="ring-container" id="ring-container">
+                <!-- Nodes will be loaded here -->
+            </div>
+        </section>
+    </div>
+
+
     <footer role="contentinfo">
         <div id="dynamic-footer"></div>
     </footer>
@@ -179,6 +208,29 @@
                     }).join('');
                 })
                 .catch(error => console.error('Failed to load web ring:', error));
+
+            fetch('/metadata/episodes.json')
+                .then(response => response.json())
+                .then(data => {
+                    const episodes = [...data.episodes];
+                    const parseDate = (value) => {
+                        const parsed = new Date(value);
+                        return Number.isNaN(parsed.getTime()) ? 0 : parsed.getTime();
+                    };
+                    episodes.sort((a, b) => parseDate(b.published) - parseDate(a.published));
+                    const latest = episodes[0];
+                    if (latest) {
+                        const player = document.getElementById('latest-episode-player');
+                        player.src = `https://www.youtube.com/embed/${latest.youtube_id}`;
+                        player.title = latest.title;
+                        
+                        const videoLink = document.getElementById('latest-video-link');
+                        if (videoLink) {
+                            videoLink.href = `https://www.youtube.com/watch?v=${latest.youtube_id}`;
+                        }
+                    }
+                })
+                .catch(error => console.error('Failed to load latest episode:', error));
         });
 
         if ('serviceWorker' in navigator) {
