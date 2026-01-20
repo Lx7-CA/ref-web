@@ -6,6 +6,15 @@
   },
   "episodes": [
     {
+      "id": "ep042",
+      "title": "Lx7 is BACK - Watch This Space",
+      "youtube_id": "Z7u2ETEtG7Q",
+      "description": "Shot-calling with a 'Watch This Space' vid. Lx7 Podcast is back!",
+      "topics": ["announcement", "comeback", "Lx7 Podcast"],
+      "published": "Jan 19, 2026",
+      "duration": "1:38"
+    },
+    {
       "id": "ep001",
       "title": "Lx7 podvert",
       "youtube_id": "uGrXNeu3fEc",

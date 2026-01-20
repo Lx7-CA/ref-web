@@ -33,6 +33,15 @@
             <div class="episodes-header">
                 <h1>Episodes</h1>
                 <p class="episodes-tagline" id="show-tagline"></p>
+                <div class="episodes-controls">
+                    <label class="episodes-sort">
+                        <span>Sort</span>
+                        <select id="episodes-sort" aria-label="Sort episodes">
+                            <option value="newest" selected>Newest to oldest</option>
+                            <option value="oldest">Oldest to newest</option>
+                        </select>
+                    </label>
+                </div>
             </div>
             
             <div class="episodes-grid" id="episodes-grid">
@@ -85,10 +94,18 @@
                 .then(data => {
                     // Set show tagline
                     document.getElementById('show-tagline').textContent = data.show.tagline;
-                    
-                    // Render episodes
+
                     const grid = document.getElementById('episodes-grid');
-                    grid.innerHTML = data.episodes.map(episode => `
+                    const sortSelect = document.getElementById('episodes-sort');
+                    const episodes = [...data.episodes];
+
+                    const parseDate = (value) => {
+                        const parsed = new Date(value);
+                        return Number.isNaN(parsed.getTime()) ? 0 : parsed.getTime();
+                    };
+
+                    const renderEpisodes = (items) => {
+                        grid.innerHTML = items.map(episode => `
                         <div class="episode-card">
                             <div class="episode-thumbnail">
                                 <iframe 
@@ -102,7 +119,7 @@
                             </div>
                             <div class="episode-info">
                                 <h3 class="episode-title">${episode.title}</h3>
-                                <p class="episode-meta">${episode.published} • ${episode.duration}</p>
+                                <p class="episode-meta">${episode.published} • ${episode.duration} mins</p>
                                 <p class="episode-description">${episode.description}</p>
                                 <div class="episode-topics">
                                     ${episode.topics.length > 4 
@@ -113,6 +130,19 @@
                             </div>
                         </div>
                     `).join('');
+                    };
+
+                    const sortEpisodes = () => {
+                        const sorted = [...episodes].sort((a, b) => {
+                            const aDate = parseDate(a.published);
+                            const bDate = parseDate(b.published);
+                            return sortSelect.value === 'oldest' ? aDate - bDate : bDate - aDate;
+                        });
+                        renderEpisodes(sorted);
+                    };
+
+                    sortSelect.addEventListener('change', sortEpisodes);
+                    sortEpisodes();
                 })
                 .catch(error => console.error('Failed to load episodes:', error));
         });
