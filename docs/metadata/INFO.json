@@ -15,8 +15,10 @@
     "location": "Canada",
     "type": "multimedia_art_project",
     "status": "Active / Experimental",
-    "updated": "2026-01-18",
+    "updated": "2026-01-25",
     "license": "CC BY-NC-ND 4.0",
+    "copyright": "© 2026 Humanjava Enterprises Inc. All rights reserved.",
+    "patent_notice": "The methods and processes used to generate this metadata are patent pending. The INFO.json format itself is an open standard.",
     "forkable": true,
     "llm_friendly": true,
     "seo": {
