@@ -1,5 +1,6 @@
 {
   "links": [
+    {"text": "Terms", "url": "https://data.lx7.ca/terms.html"},
     {"text": "INFO.json", "url": "https://Lx7.ca/metadata/INFO.json", "text_extra": "site metadata"},
     {"text": "GitHub Repo", "url": "https://github.com/Lx7-CA/ref-web"},
     {"text": "Fork this repo", "url": "https://github.com/Lx7-CA/ref-web/fork", "text_extra": "to remix"}
