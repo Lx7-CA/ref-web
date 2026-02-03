@@ -148,6 +148,7 @@
                                 return `<a href="${link.url}" target="_blank">${link.text}</a>`;
                             }).join('')}
                         </div>
+                        ${data.disclaimer ? `<p class="no-coin">${data.disclaimer}</p>` : ''}
                     `;
                 });
 

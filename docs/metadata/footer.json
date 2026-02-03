@@ -5,5 +5,6 @@
     {"text": "GitHub Repo", "url": "https://github.com/Lx7-CA/ref-web"},
     {"text": "Fork this repo", "url": "https://github.com/Lx7-CA/ref-web/fork", "text_extra": "to remix"}
   ],
-  "footerText": "© 2026 Lx7.ca • Something In That Square"
+  "footerText": "© 2026 Lx7.ca • Something In That Square",
+  "disclaimer": "This project does NOT have a crypto coin."
 }
