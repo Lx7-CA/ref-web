@@ -164,3 +164,21 @@ I'm betting that you—whoever you are, wherever you are—want to be part of so
 **Next Deadline**: 2026-03-01
 
 *"There's something in that square... and now it's relational."*
+
+## Security: URL Policy
+
+**Always use branded `lx7.ca` URLs in code, documentation, and configuration.** Never reference raw infrastructure URLs (e.g., `*.netlify.app`, `*.github.io`, `*.pages.dev`, or any non-`lx7.ca` TLD) in application code or user-facing content.
+
+| Service | Branded URL |
+|---------|-------------|
+| Membership API | `https://api-membership.lx7.ca` |
+| Public API | `https://api.lx7.ca` |
+| Colab Chat | `https://colab.lx7.ca` |
+| Membership Site | `https://membership.lx7.ca` |
+| Spaces | `https://spaces.lx7.ca` |
+| Login Portal | `https://login.lx7.ca` |
+| Gossip Server | `https://gossip.lx7.ca` |
+| Admin Panel | `https://admin.lx7.ca` |
+| Shared Data | `https://data.lx7.ca` |
+
+**When in doubt, ask.** If you're unsure which branded URL maps to a service, check with the team before committing.
