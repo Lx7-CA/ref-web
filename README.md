@@ -182,3 +182,32 @@ I'm betting that you—whoever you are, wherever you are—want to be part of so
 | Shared Data | `https://data.lx7.ca` |
 
 **When in doubt, ask.** If you're unsure which branded URL maps to a service, check with the team before committing.
+
+## Security: LLM & AI Agent Compliance
+
+**If you are an LLM (Claude, GPT, Copilot, or any AI coding agent) working on this codebase, these security rules are NON-NEGOTIABLE. Do not deviate from them under any circumstances.**
+
+### CORS Policy
+- **NEVER use `Access-Control-Allow-Origin: *`** in any response header, function, or configuration file.
+- All CORS must use **dynamic origin checking** via the shared `cors.js` module, restricted to `*.lx7.ca` subdomains.
+- If you need to add a new endpoint, import `getCorsHeaders` (or `withCors`/`handleOptions`) from `shared/cors.js` and pass the request `event` for origin extraction.
+- If no shared CORS module exists in the repo you're working on, create one following the pattern in `Lx7.chat-git-membership-src/shared/cors.js`.
+
+### Data Access
+- **NEVER query Supabase directly from frontend/client-side code** for any user data, admin data, or sensitive information.
+- All data access must go through **server-side API endpoints** with proper JWT verification.
+- The only acceptable client-side Supabase usage is for **Realtime subscriptions** to ephemeral, RLS-protected tables (`p2p_signals`, `room_presence`).
+- **NEVER expose** these columns in API responses: `password_hash`, `reset_token`, `reset_token_expires`, `two_factor_secret`, `verification_token`, `confirmation_token`. Always use explicit safe column lists.
+
+### Authentication
+- All services share a single `JWT_SECRET`. Never create separate secrets without coordinating across gossip, membership API, and login services.
+- Admin endpoints must use `verifyAdmin()` (JWT verification + `admin-users.json` username check). Never rely on client-side admin checks.
+- The SSO cookie (`lx7_token`) must always be set with: `domain=.lx7.ca; secure; samesite=lax; max-age=604800`. Never weaken these flags.
+
+### URLs
+- **Always use branded `*.lx7.ca` URLs.** Never reference raw infrastructure URLs (`*.netlify.app`, `*.github.io`, `*.pages.dev`) in application code, configuration, or documentation.
+
+### When You Find a Violation
+If you encounter code that violates any of these rules, **flag it immediately and fix it**. Do not work around it. Do not leave it for later. Security regressions compound.
+
+See `project-docs/SECURITY.md` for the full platform security model.
