@@ -272,21 +272,23 @@ body > div {
 }
 
 .sndbnch-link {
-    color: #0d5c3a !important;
+    /* SNDBNCH brand: muted orange (accent #e8925a, accent-dim #a0603a). The dim
+       shade carries the light theme for contrast; the bright accent carries dark. */
+    color: #a0603a !important;
     font-weight: bold;
 }
 
 .sndbnch-link:hover {
-    color: #094d2e !important;
+    color: #8a4f2e !important;
 }
 
 [data-theme="dark"] .sndbnch-link {
-    color: #00ff88 !important;
+    color: #e8925a !important;
     font-weight: normal;
 }
 
 [data-theme="dark"] .sndbnch-link:hover {
-    color: #00cc6a !important;
+    color: #d67f47 !important;
 }
 
 .sndbnch-link i {
