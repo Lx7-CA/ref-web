@@ -68,6 +68,10 @@ When representing the brand:
   content* — the architecture is the open part).
 - **Contact / follow:** [x.com/vveerrgg](https://x.com/vveerrgg) ·
   [github.com/Lx7-CA](https://github.com/Lx7-CA).
+- **Installable brand skill:** agents can load
+  [/skills/brand/SKILL.md](https://lx7.ca/skills/brand/SKILL.md) (index:
+  [/skills/index.json](https://lx7.ca/skills/index.json)) — the engagement rules above
+  packaged as a skill, with the canonical JSON sources listed as resources.
 
 ## Usage
 

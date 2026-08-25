@@ -1,0 +1,13 @@
+{
+  "skill": "brand",
+  "version": "0.1.0",
+  "description": "Engage accurately with the Lx7.ca brand — canonical data sources, framing, and citation rules.",
+  "resources": [
+    "GET https://lx7.ca/metadata/INFO.json",
+    "GET https://lx7.ca/metadata/episodes.json",
+    "GET https://lx7.ca/metadata/web-ring.json",
+    "GET https://lx7.ca/llms.txt"
+  ],
+  "skill_md": "https://lx7.ca/skills/brand/SKILL.md",
+  "auth": "none — everything is public and read-only"
+}
