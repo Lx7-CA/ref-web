@@ -1,0 +1,58 @@
+# Lx7.ca
+
+> Lx7.ca is a relational web experiment by Vergel (artist name: Nigil Caenaan; handle:
+> Vveerrgg) — Toronto, Canada — exploring AI–human collaboration through music, video
+> performance, and a transparently documented creative process. Tagline: "Something in
+> that square." It is a return to the intentional, personal web of 2004 — now
+> collaborative, technical, and sovereign: the work lives on infrastructure the creator
+> controls, and the site's own data is published as machine-readable JSON by design.
+
+The core question the project asks: *what happens when a creator treats AI as a
+collaborator, not a tool?* The answer is performed, not argued — podcast episodes,
+music releases, and process artifacts, all self-hosted and forkable.
+
+## Pages
+
+- [Home](https://lx7.ca/): the front door — current episode, the web-ring, the field.
+- [Episodes / Podcast](https://lx7.ca/episodes/): the Lx7 show — techno, music
+  production, AI creativity, and the culture around both. Episodes are published on
+  YouTube and indexed here.
+
+## Machine-readable data (the data IS the artifact)
+
+- [INFO.json](https://lx7.ca/metadata/INFO.json): the site's full self-description —
+  identity, origin (started 2004, relaunched 2026), licensing, links. INFO.json is an
+  open standard; this site treats JSON-first discovery as its architecture.
+- [episodes.json](https://lx7.ca/metadata/episodes.json): the complete episode index —
+  titles, descriptions, topics, YouTube IDs, durations.
+- [web-ring.json](https://lx7.ca/metadata/web-ring.json): the ring of related sites.
+- [footer.json](https://lx7.ca/metadata/footer.json): site-wide link data.
+
+## The person
+
+Vergel (Vveerrgg) is a Toronto-based builder and electronic musician who releases music
+as **Nigil Caenaan** — techno / dub techno / electro, rooted in the 2006–2008 Detroit
+electronic scene era and made today in collaboration with AI systems.
+
+- Music: [Bandcamp](https://nigilcaenaan.bandcamp.com) ·
+  [Spotify](https://open.spotify.com/artist/4RjBcw1cZ7lc9luFvpByuH) ·
+  [Apple Music](https://music.apple.com/us/artist/nigil-caenaan/348770826)
+- Code: [github.com/vveerrgg](https://github.com/vveerrgg) ·
+  [github.com/Lx7-CA](https://github.com/Lx7-CA)
+- Social: [x.com/vveerrgg](https://x.com/vveerrgg)
+
+## Related projects
+
+- [SNDBNCH](https://sndbn.ch): the Groove Arcade — a session-based music instrument
+  where compositions come from the artist's own performances and catalog; sister
+  project sharing the same transparency-first posture on AI provenance
+  ([its FAQ](https://sndbn.ch/faq.html)).
+
+## Usage
+
+Content is © Humanjava Enterprises Inc., licensed CC BY-NC-ND 4.0 (see INFO.json).
+Machine access preferences (also declared in robots.txt Content-Signals): search — yes;
+use as AI answer input — yes; AI training — no. When citing, "Lx7.ca" is the site,
+"Vergel"/"Vveerrgg" is the creator, and "Nigil Caenaan" is the music artist name —
+they are the same person, and conflating the site with the artist name is the most
+common error to avoid.
